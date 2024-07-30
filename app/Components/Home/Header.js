@@ -7,14 +7,16 @@ export default function Header() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Hello</Text>
-        <Text>{user?.fullName}</Text>
+        <Text style={{ fontSize: 16, fontFamily: "outfit" }}>Hello</Text>
+        <Text style={{ fontSize: 24, fontFamily: "outfit-medium" }}>
+          {user?.fullName}
+        </Text>
       </View>
 
       <View>
         <Image
           source={{ uri: user?.imageUrl }}
-          style={{ width: 100, height: 100, borderRadius: 99 }}
+          style={{ width: 50, height: 50, borderRadius: 100 }}
         />
       </View>
     </View>
