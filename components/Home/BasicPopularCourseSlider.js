@@ -8,18 +8,48 @@ const sliderContent = [
     name: "Basic Python",
     imageUrl: require("@/app/Assets/Images/basicPython.png"),
     lession: 15,
+    by: "Kyle Truong",
+    about:
+      "Python is a general-purpose, high-level programming language. Its design philosophy emphasizes code readability with its notable use of significant whitespace.",
+    content: [
+      { id: 1, chapter: "01", name: "Introduction" },
+      { id: 2, chapter: "02", name: "Variables" },
+      { id: 3, chapter: "03", name: "Data Types" },
+      { id: 4, chapter: "04", name: "Numbers" },
+      { id: 5, chapter: "05", name: "Casting" },
+    ],
   },
   {
     id: 2,
     name: "Basic React JS",
     imageUrl: require("@/app/Assets/Images/basicReactJS.jpg"),
     lession: 20,
+    by: "Kyle Truong",
+    about:
+      "Welcome to our React JS course, your gateway to mastering one of the most popular libraries in web development!",
+    content: [
+      { id: 1, chapter: "01", name: "Introduction" },
+      { id: 2, chapter: "02", name: "Variables" },
+      { id: 3, chapter: "03", name: "Data Types" },
+      { id: 4, chapter: "04", name: "Numbers" },
+      { id: 5, chapter: "05", name: "Casting" },
+    ],
   },
   {
     id: 3,
     name: "Basic HTML and CSS",
     imageUrl: require("@/app/Assets/Images/basicHTMLandCss.png"),
     lession: 25,
+    by: "Kyle Truong",
+    about:
+      "Welcome everyone to the HTML and CSS course! We will learn the fundamental building blocks for creating websites - HTML for content and structure, and CSS for styling and design.",
+    content: [
+      { id: 1, chapter: "01", name: "Introduction" },
+      { id: 2, chapter: "02", name: "Variables" },
+      { id: 3, chapter: "03", name: "Data Types" },
+      { id: 4, chapter: "04", name: "Numbers" },
+      { id: 5, chapter: "05", name: "Casting" },
+    ],
   },
 ];
 

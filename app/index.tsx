@@ -3,5 +3,5 @@ import React from "react";
 import { Text, View } from "react-native";
 
 export default function Index() {
-  return <Redirect href={"/Pages/Home"} />;
+  return <Redirect href="/(Pages)/Home" />;
 }
