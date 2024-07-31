@@ -1,5 +1,6 @@
 import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import { useRouter } from "expo-router";
 
 const sliderContent = [
   {
@@ -23,6 +24,13 @@ const sliderContent = [
 ];
 
 export default function BasicPopularCourseSlider() {
+  const router = useRouter();
+  const onPress = (item) => {
+    console.log(item.name);
+    const itemJson = encodeURIComponent(JSON.stringify(item));
+    router.push("/BasicPopularCourseDetail/" + itemJson);
+  };
+
   return (
     <View>
       <FlatList
@@ -40,6 +48,7 @@ export default function BasicPopularCourseSlider() {
               marginBottom: 10,
               marginRight: 12,
             }}
+            onPress={() => onPress(item)}
           >
             <Image source={item.imageUrl} style={{ width: 210, height: 140 }} />
             <View

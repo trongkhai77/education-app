@@ -1,6 +1,5 @@
-import Login from "./Pages/Login";
-import Home from "./Pages/Home";
-import { View, Text } from "react-native";
+import Login from "./(Pages)/Login";
+import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import React from "react";
 import {
@@ -48,7 +47,13 @@ export default function RootLayout() {
       publishableKey={process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
       <SignedIn>
-        <Home />
+        <Stack
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name="(Pages)" />
+        </Stack>
       </SignedIn>
 
       <SignedOut>

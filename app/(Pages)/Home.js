@@ -1,8 +1,8 @@
 import { ScrollView, View } from "react-native";
 import React from "react";
 import { useUser } from "@clerk/clerk-expo";
-import Header from "./../Components/Home/Header";
-import SearchBar from "./../Components/Home/SearchBar";
+import Header from "../Components/Home/Header";
+import SearchBar from "../Components/Home/SearchBar";
 import VideoCourse from "../Components/Home/VideoCourse";
 import BasicPopularCourse from "../Components/Home/BasicPopularCourse";
 import AdvancedCourse from "../Components/Home/AdvancedCourse";
