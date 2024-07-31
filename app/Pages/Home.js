@@ -1,14 +1,17 @@
-import { View, Text } from "react-native";
+import { ScrollView, View } from "react-native";
 import React from "react";
 import { useUser } from "@clerk/clerk-expo";
 import Header from "./../Components/Home/Header";
 import SearchBar from "./../Components/Home/SearchBar";
-import VideoCourseSlider from "../Components/Home/VideoCourseSlider";
+import VideoCourse from "../Components/Home/VideoCourse";
+import BasicPopularCourse from "../Components/Home/BasicPopularCourse";
+import AdvancedCourse from "../Components/Home/AdvancedCourse";
 
 export default function Home() {
   const { user } = useUser();
   return (
-    <View
+    <ScrollView
+      showsVerticalScrollIndicator={false}
       style={{
         padding: 20,
         marginTop: 10,
@@ -21,8 +24,16 @@ export default function Home() {
       {/* Search Bar */}
       <SearchBar />
 
-      {/* Slider */}
-      <VideoCourseSlider />
-    </View>
+      {/* VideoCourse */}
+      <VideoCourse />
+
+      {/* Basic Popular Course */}
+      <BasicPopularCourse />
+
+      {/* Advance Course */}
+      <AdvancedCourse />
+
+      <View style={{ paddingTop: 40 }}></View>
+    </ScrollView>
   );
 }

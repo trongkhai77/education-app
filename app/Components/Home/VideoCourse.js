@@ -1,7 +1,8 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
+import VideoCourseSlider from "../../../components/Home/VideoCourseSlider";
 
-export default function VideoCourseSlider() {
+export default function VideoCourse() {
   return (
     <View>
       <Image
@@ -10,7 +11,12 @@ export default function VideoCourseSlider() {
       />
 
       <View>
-        <Text>Video Course</Text>
+        <Text
+          style={{ fontFamily: "outfit-bold", fontSize: 24, marginTop: 30 }}
+        >
+          Video Course
+        </Text>
+        <VideoCourseSlider />
       </View>
     </View>
   );
